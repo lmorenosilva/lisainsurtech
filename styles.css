@@ -1,0 +1,817 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+/* Medias Queries */
+
+/* --bdt-breakpoint-s: 640px;
+    --bdt-breakpoint-m: 960px;
+    --bdt-breakpoint-l: 1200px;
+    --bdt-breakpoint-xl: 1600px; */
+
+* {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, 
+which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+.padre {
+  display: flex;
+  width: 100%;
+  /* flex-flow: column nowrap; */
+  background: url(./asset/futuristic-secure-mail-connections-backgrounds-picture.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+
+  /* width: 100%; */
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  /* width: fit-content; */
+  /* width: 100%; */
+  /* flex-wrap: nowrap; */
+  align-items: flex-start;
+  background: skyblue;
+}
+
+.logo {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.nav {
+  background: #ffad60;
+  display: flex;
+  flex: 5 1 auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.nav-menu-main {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 20px;
+}
+
+.collapsible {
+  /* background: slategray; */
+  cursor: pointer;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  /* max-height: 0; */
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.nav-menu-main .nav-menu-item {
+  color: #3e297b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-flow: column nowrap;
+}
+
+.btn {
+  width: auto;
+  display: inline-block;
+  padding: 12px 15px;
+  border: none;
+  background-color: #7ad3a0;
+  color: #fff;
+  border-radius: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+}
+
+.mainText {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.heroText {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
+.boton {
+  /* display: flex; */
+  text-align: center;
+}
+
+.widgetWrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  align-items: flex-start;
+  /* background: #83ccdd; */
+  /* width: 100%; */
+}
+
+.heading-title {
+  color: #3e297b;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 41px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* section de video e informacion */
+.first-inner-section {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 70px;
+  background: #fff;
+}
+
+.first-inner-section {
+  font-size: 17px;
+  font-family: 'Roboto', Sans-serif;
+  font-weight: 300;
+}
+
+.inner-paragraph {
+  align-items: center;
+}
+
+.inner-paragraph-btn {
+  text-align: center;
+}
+
+.video-container {
+  padding: 10px;
+  width: 430px;
+  height: 320;
+  border: 2px red solid;
+}
+
+/* THE LISA INSURTECH PURPOSE */
+
+.lisaPurpose {
+  display: flex;
+  flex-direction: column;
+  margin-top: -25px;
+  margin-bottom: 25px;
+}
+
+.lisaPurposeh2 {
+  align-items: flex-start;
+}
+
+.inner-paragraphTwo {
+  align-items: center;
+  margin-top: -45px;
+  font-size: 17px;
+  font-family: 'Roboto', Sans-serif;
+  font-weight: 300;
+}
+
+/* Subscripcion */
+
+.form-subscription {
+  width: 100%;
+  display: flex;
+  background: #3e297b;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 30px 0px;
+}
+
+.subscripcion {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Subscripcion Input e-mail  */
+
+.subscripcion-email {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.white-h5 {
+  color: #fff;
+}
+
+.form-subscripcion-text {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.subscripcion-input {
+  box-sizing: border-box;
+  padding: 5px 15px;
+  min-height: 27px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.btn-subscription {
+  padding: 15px 32px;
+  border: none;
+  background-color: #7ad3a0;
+  margin-top: 54px;
+  color: #fff;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+}
+
+.ourServices {
+  display: flex;
+  flex-direction: row;
+}
+
+.second-inner-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lisaClaim {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.lisaGateway {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.lisaTmt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.lisaClaim-btn {
+  text-align: center;
+}
+
+.btn-lisaClaim {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+  background-color: #ff9d6c;
+  border-radius: 22px;
+  padding: 12px 20px;
+}
+
+.btn-lisaGateway {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+  background-color: #ed63d2;
+  border-radius: 22px;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.btn-lisaTmt {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #83ccdd;
+  border-radius: 22px;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.inner-paragraphthree {
+  align-items: center;
+  /* margin-top: -45px; */
+  font-size: 17px;
+  font-family: 'Roboto', Sans-serif;
+  font-weight: 300;
+}
+
+.jobPages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3e297b;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 30px 0px;
+}
+
+.jobPagesHeading {
+  margin-top: 0px;
+}
+
+.jobPages-h5 {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 0px;
+}
+
+.jobPages-text {
+  margin: 0px 0px 23px;
+}
+
+.jobPagesParagraph {
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  /* margin-top: -45px; */
+  font-size: 23px;
+  font-family: 'Roboto', Sans-serif;
+  font-weight: 500;
+}
+
+.btn .jobPages-boton {
+  font-family: 'Roboto', Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #7ad3a0;
+  border-radius: 22px;
+  padding: 12px 15px;
+}
+
+/* Blog Section  */
+
+.sectionBlog {
+  background: #fff;
+  padding: 100px 0px 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.column-wrap {
+  width: 100%;
+  padding: 10px;
+}
+
+.widgetContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 0px 0px;
+}
+
+.postContainerCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 35px;
+}
+
+.postCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 3px;
+  border: 0 solid #818a91;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.postCard:hover {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+}
+
+.bcg-img {
+  /* background-image: url(./asset/artificial_intelligence_re_enpp.svg);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; */
+  margin-bottom: 10px;
+  display: flex;
+  box-shadow: none;
+}
+
+.postTitle {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.postTitle a {
+  display: flex;
+  color: #3e297b;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.postText {
+  color: #3e297b;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.postExcerpt {
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}
+
+.readMore {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.post-meta-data {
+  margin-top: auto;
+  padding: 15px 30px;
+  margin-bottom: 0;
+  border-top: 1px solid #eaeaea;
+  font-family: 'Roboto Slab', Sans-serif;
+  font-weight: 400;
+  line-height: 1.3em;
+  font-size: 14px;
+  margin-bottom: 13px;
+  color: #adadad;
+  text-align: left;
+}
+
+.button-wraper {
+  text-align: center;
+}
+
+.button-text {
+  display: flex;
+  justify-content: center;
+}
+
+.ContactLisaTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3e297b;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 50px 25px;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cualquierVerga {
+  margin-top: 10px;
+}
+
+.heading-title-white-h2 {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.heading-title-white-h5 {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contactForm {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+}
+
+.formAction {
+  width: 100%;
+}
+
+.twoColumnForm {
+  display: flex;
+}
+
+.inputName {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+}
+
+.labelName {
+  font-size: 13px;
+  /* margin-bottom: 4px; */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #f0f3f6;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* .labelEmail{
+  font-size: 13px;
+  margin-bottom: 4px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #f0f3f6;
+  font-weight: 500;
+  line-height: 20px
+
+} */
+
+.inputTxt {
+  border-radius: 22px;
+  border: none;
+}
+
+.campoObligatorio {
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #f2545b;
+}
+
+.inputEmail {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  flex: 0.5;
+}
+
+.inputTxtEmail {
+  border-radius: 22px;
+  border: none;
+}
+
+.inputPhone {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputTxtPhone {
+  border-radius: 22px;
+  border: none;
+}
+
+.inputMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputTxtMessa {
+  border-radius: 22px;
+  border: none;
+  height: 60px;
+}
+
+/* Footer Section */
+
+/* .footer {
+  width: 100%;
+  background: #3e297b;
+  padding: 50px 0 25px;
+} */
+
+.containerColumn {
+  padding: 10px;
+}
+
+.loQueSea {
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.rowContainer {
+  width: min-content;
+  box-sizing: border-box;
+  display: flex;
+  margin: 10px;
+}
+
+.paolo {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1;
+}
+
+.footerLisaSolut {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 22.5px;
+  font-weight: 400;
+}
+
+/* redefinicion Footer */
+
+footer.footer {
+  width: 100%;
+  background: #3e297b;
+  padding: 50px 0 25px;
+}
+
+footer.footer .container {
+  padding: 10px;
+}
+
+footer.footer .container .logo-container {
+  text-align: left;
+  width: 100%;
+}
+
+footer.footer .row {
+  display: flex;
+  width: 100%;
+}
+
+footer.footer .container .column.logos-column .logo-corfo {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer.footer .container .column.logos-column .logo-bootcamp {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer.footer .container .column.menu-column .title {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1;
+}
+
+footer.footer .container .column.menu-column .text {
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 22.5px;
+  font-weight: 400;
+}
+
+footer.footer .social-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px 0 0;
+}
+
+footer.footer .social-container .empty-div {
+  width: 25%;
+  min-height: 1px;
+}
+
+footer.footer .social-container .text {
+  width: 25%;
+  text-align: right;
+  min-height: 1px;
+  color: #fff;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer.footer .social-container .logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 25%;
+  min-height: 1px;
+}
+
+footer.footer .social-container .logos .logo.linkedin {
+}
+
+footer.footer .social-container .logos .logo.instagram {
+}
+
+.footer.footer .copyright {
+  text-align: right;
+  color: #fff;
+  font-size: 22.5px;
+  font-family: 'Roboto', Sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
