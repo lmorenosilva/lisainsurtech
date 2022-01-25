@@ -774,6 +774,10 @@ footer.footer .container .column.menu-column .text {
   font-weight: 400;
 }
 
+footer.footer .container .column.menu-column .text .pointer {
+  cursor: pointer;
+}
+
 footer.footer .social-container {
   display: flex;
   flex-direction: row;
